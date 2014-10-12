@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F03404F19E84D9D00E409C2 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4F03404E19E84D9D00E409C2 /* Shaders.metal */; };
+		4F03405119EA68C300E409C2 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F03405019EA68C300E409C2 /* Metal.framework */; };
+		4F03405319EA6D9C00E409C2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F03405219EA6D9C00E409C2 /* QuartzCore.framework */; };
 		4FC3E71519E2EE9D002B348D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3E71419E2EE9D002B348D /* AppDelegate.swift */; };
 		4FC3E71719E2EE9D002B348D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3E71619E2EE9D002B348D /* ViewController.swift */; };
 		4FC3E71A19E2EE9D002B348D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC3E71819E2EE9D002B348D /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F03404E19E84D9D00E409C2 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		4F03405019EA68C300E409C2 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		4F03405219EA6D9C00E409C2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4FC3E70F19E2EE9D002B348D /* HelloMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC3E71319E2EE9D002B348D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FC3E71419E2EE9D002B348D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F03405319EA6D9C00E409C2 /* QuartzCore.framework in Frameworks */,
+				4F03405119EA68C300E409C2 /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,8 @@
 		4FC3E70619E2EE9D002B348D = {
 			isa = PBXGroup;
 			children = (
+				4F03405219EA6D9C00E409C2 /* QuartzCore.framework */,
+				4F03405019EA68C300E409C2 /* Metal.framework */,
 				4FC3E71119E2EE9D002B348D /* HelloMetal */,
 				4FC3E72719E2EE9D002B348D /* HelloMetalTests */,
 				4FC3E71019E2EE9D002B348D /* Products */,
@@ -79,6 +89,7 @@
 			children = (
 				4FC3E71419E2EE9D002B348D /* AppDelegate.swift */,
 				4FC3E71619E2EE9D002B348D /* ViewController.swift */,
+				4F03404E19E84D9D00E409C2 /* Shaders.metal */,
 				4FC3E71819E2EE9D002B348D /* Main.storyboard */,
 				4FC3E71B19E2EE9D002B348D /* Images.xcassets */,
 				4FC3E71D19E2EE9D002B348D /* LaunchScreen.xib */,
@@ -161,6 +172,7 @@
 				TargetAttributes = {
 					4FC3E70E19E2EE9D002B348D = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = V7RZDY3Z99;
 					};
 					4FC3E72319E2EE9D002B348D = {
 						CreatedOnToolsVersion = 6.1;
@@ -212,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F03404F19E84D9D00E409C2 /* Shaders.metal in Sources */,
 				4FC3E71719E2EE9D002B348D /* ViewController.swift in Sources */,
 				4FC3E71519E2EE9D002B348D /* AppDelegate.swift in Sources */,
 			);
@@ -341,6 +354,7 @@
 				INFOPLIST_FILE = HelloMetal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -351,6 +365,7 @@
 				INFOPLIST_FILE = HelloMetal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -398,7 +413,7 @@
 				4FC3E72D19E2EE9D002B348D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4FC3E72E19E2EE9D002B348D /* Build configuration list for PBXNativeTarget "HelloMetal" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +422,7 @@
 				4FC3E73019E2EE9D002B348D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		4FC3E73119E2EE9D002B348D /* Build configuration list for PBXNativeTarget "HelloMetalTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +431,7 @@
 				4FC3E73319E2EE9D002B348D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
